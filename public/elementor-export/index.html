@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurul Hoque | WordPress Web Designer & Developer</title>
+  <meta name="description" content="I design fast, responsive and conversion-focused WordPress websites with Elementor & WooCommerce.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              main: '#080c14',
+              surface: '#0f172a',
+              accent: '#34d399',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- WordPress Customizer Compatible Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="nh-portfolio-body bg-[#080c14] text-slate-100 font-sans">
+
+  <!-- Header -->
+  <header id="nh-header" class="fixed top-0 left-0 right-0 z-50 bg-[#080c14]/90 backdrop-blur-md border-b border-white/5 py-4 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 text-white font-bold text-lg">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+        <span>Nurul Hoque</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm text-slate-300 font-medium">
+        <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="#services" class="hover:text-emerald-400 transition-colors">Services</a>
+        <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-emerald-400 transition-colors">Skills</a>
+        <a href="#process" class="hover:text-emerald-400 transition-colors">Process</a>
+        <a href="#faq" class="hover:text-emerald-400 transition-colors">FAQ</a>
+        <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/8801970277595?text=Hello%20Nurul,%20I%20am%20interested%20in%20a%20WordPress%20project" target="_blank" class="nh-btn-whatsapp text-xs py-2 px-3.5">
+          <span>WhatsApp</span>
+        </a>
+        <a href="#contact" class="nh-btn-primary text-xs py-2 px-4">
+          <span>Hire Me</span>
+        </a>
+        <button id="nh-mobile-toggle" class="md:hidden p-2 text-white bg-white/5 rounded-lg">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="nh-mobile-drawer" class="hidden md:hidden bg-[#0c121e] border-b border-white/10 px-6 py-6 space-y-3">
+      <a href="#about" class="block py-2 text-slate-300 hover:text-emerald-400">About</a>
+      <a href="#services" class="block py-2 text-slate-300 hover:text-emerald-400">Services</a>
+      <a href="#projects" class="block py-2 text-slate-300 hover:text-emerald-400">Projects</a>
+      <a href="#skills" class="block py-2 text-slate-300 hover:text-emerald-400">Skills</a>
+      <a href="#process" class="block py-2 text-slate-300 hover:text-emerald-400">Process</a>
+      <a href="#faq" class="block py-2 text-slate-300 hover:text-emerald-400">FAQ</a>
+      <a href="#contact" class="block py-2 text-slate-300 hover:text-emerald-400">Contact</a>
+      <a href="https://wa.me/8801970277595" target="_blank" class="block py-2.5 text-center bg-emerald-500/20 text-emerald-300 font-bold rounded-lg mt-2">
+        WhatsApp: 01970277595
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-24 md:pt-44 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="nh-badge">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>WORDPRESS WEB DESIGNER · AVAILABLE WORLDWIDE</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          I Build <span class="nh-gradient-text">Modern WordPress Websites</span> That Help Businesses Grow.
+        </h1>
+
+        <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+          I design fast, responsive and conversion-focused WordPress websites for businesses, entrepreneurs, agencies and online brands with Elementor and WooCommerce.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#projects" class="nh-btn-primary">View My Work</a>
+          <a href="https://wa.me/8801970277595?text=Hello%20Nurul,%20I%20am%20interested%20in%20a%20WordPress%20project" target="_blank" class="nh-btn-whatsapp">
+            WhatsApp: 01970277595
+          </a>
+          <a href="#contact" class="nh-btn-secondary">Let's Work Together</a>
+        </div>
+
+        <div class="pt-4 flex flex-wrap items-center gap-4 text-xs text-slate-400">
+          <span>Connect:</span>
+          <a href="https://wa.me/8801970277595" target="_blank" class="text-emerald-400 font-medium">WhatsApp</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/md-nurul-hoque-191a4637a/" target="_blank" class="text-slate-300 hover:text-white font-medium">LinkedIn</a>
+          <span>·</span>
+          <a href="https://www.facebook.com/nurlhoque22" target="_blank" class="text-slate-300 hover:text-white font-medium">Facebook</a>
+          <span>·</span>
+          <a href="mailto:mdnurulhoque1904@gmail.com" class="text-slate-300 font-mono">mdnurulhoque1904@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="nh-glass-card p-4 max-w-md w-full">
+          <img src="/assets/images/nurul_hoque_official_portrait_1791264591190.jpg" alt="Nurul Hoque" class="w-full rounded-xl aspect-[3/4] object-cover object-top shadow-2xl">
+          <div class="mt-4 text-left">
+            <div class="text-white font-bold text-lg">Nurul Hoque</div>
+            <div class="text-emerald-400 text-xs font-semibold">WordPress Web Designer & Developer</div>
+            <div class="text-slate-400 text-xs mt-1">WhatsApp: 01970277595 · Remote Worldwide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 border-t border-white/5 bg-[#090e18] px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">About Me</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white">Dedicated to Crafting High-Performing WordPress Experiences.</h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          With 2+ years of hands-on WordPress expertise, I specialize in Elementor Pro Theme Building, WooCommerce online stores, and high-converting marketing landing pages that elevate client authority.
+        </p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="nh-glass-card p-6">
+          <div class="text-4xl font-extrabold text-white">2+</div>
+          <div class="text-emerald-400 font-semibold text-sm mt-1">Years Experience</div>
+          <div class="text-slate-400 text-xs mt-1">WordPress Specialization</div>
+        </div>
+        <div class="nh-glass-card p-6">
+          <div class="text-4xl font-extrabold text-white">20+</div>
+          <div class="text-emerald-400 font-semibold text-sm mt-1">Projects Built</div>
+          <div class="text-slate-400 text-xs mt-1">E-commerce, Business & LMS</div>
+        </div>
+        <div class="nh-glass-card p-6">
+          <div class="text-4xl font-extrabold text-white">100%</div>
+          <div class="text-emerald-400 font-semibold text-sm mt-1">Responsive Design</div>
+          <div class="text-slate-400 text-xs mt-1">Desktop, Tablet & Mobile</div>
+        </div>
+        <div class="nh-glass-card p-6">
+          <div class="text-4xl font-extrabold text-white">Client-Focused</div>
+          <div class="text-emerald-400 font-semibold text-sm mt-1">Strategic Approach</div>
+          <div class="text-slate-400 text-xs mt-1">Prioritizing Business Results</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Channels Section -->
+  <section id="contact" class="py-24 border-t border-white/5 bg-[#080c14] px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Start a Project</div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Have a project in mind? Let's build something great together.</h2>
+        <p class="text-slate-300 text-base">Direct communication, rapid response under 12 hours, and transparent project roadmaps.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://wa.me/8801970277595?text=Hello%20Nurul,%20I%20am%20interested%20in%20a%20WordPress%20project" target="_blank" class="nh-glass-card p-6 block">
+          <div class="text-emerald-400 text-xs font-bold uppercase">WhatsApp (Fastest Response)</div>
+          <div class="text-white text-2xl font-extrabold mt-2">01970277595</div>
+          <div class="text-slate-400 text-xs mt-1">International: +880 1970 277595 · Click to chat</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/md-nurul-hoque-191a4637a/" target="_blank" class="nh-glass-card p-6 block">
+          <div class="text-blue-400 text-xs font-bold uppercase">LinkedIn Profile</div>
+          <div class="text-white text-xl font-bold mt-2">md-nurul-hoque-191a4637a</div>
+          <div class="text-slate-400 text-xs mt-1">Connect professionally on LinkedIn</div>
+        </a>
+
+        <a href="https://www.facebook.com/nurlhoque22" target="_blank" class="nh-glass-card p-6 block">
+          <div class="text-cyan-400 text-xs font-bold uppercase">Facebook Page</div>
+          <div class="text-white text-xl font-bold mt-2">nurlhoque22</div>
+          <div class="text-slate-400 text-xs mt-1">Follow and chat via Facebook</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-white/5 bg-[#05080e] text-center text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 space-y-3">
+      <div class="font-bold text-white text-base">Nurul Hoque</div>
+      <p>WordPress Web Designer & Website Developer · WhatsApp: 01970277595</p>
+      <p>© 2026 Nurul Hoque. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vanilla Interaction Script -->
+  <script src="script.js"></script>
+</body>
+</html>

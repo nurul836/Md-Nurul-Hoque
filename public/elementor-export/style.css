@@ -1,0 +1,246 @@
+/* ==========================================================================
+   NURUL HOQUE - WORDPRESS & ELEMENTOR PORTFOLIO CUSTOM STYLES
+   Paste into: Appearance > Customize > Additional CSS (or Elementor Site Settings > Custom CSS)
+   ========================================================================== */
+
+/* --- 1. Font Variables & Global Base Styles --- */
+:root {
+  --nh-bg-main: #080c14;
+  --nh-bg-surface: #0f172a;
+  --nh-bg-card: rgba(15, 23, 42, 0.75);
+  --nh-border-subtle: rgba(255, 255, 255, 0.08);
+  --nh-border-accent: rgba(16, 185, 129, 0.35);
+  --nh-emerald-400: #34d399;
+  --nh-emerald-500: #10b981;
+  --nh-emerald-600: #059669;
+  --nh-text-primary: #f8fafc;
+  --nh-text-secondary: #94a3b8;
+  --nh-text-muted: #64748b;
+  --nh-font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --nh-font-display: 'Syne', system-ui, sans-serif;
+}
+
+body.nh-portfolio-body,
+.elementor-page-nurul-portfolio {
+  background-color: var(--nh-bg-main) !important;
+  color: var(--nh-text-primary) !important;
+  font-family: var(--nh-font-sans) !important;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--nh-emerald-500);
+  color: #04120c;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--nh-bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* --- 2. Glassmorphic Surface & Hover Effects --- */
+.nh-glass-card {
+  background: var(--nh-bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--nh-border-subtle);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nh-glass-card:hover {
+  background: rgba(18, 28, 51, 0.85);
+  border-color: var(--nh-border-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.08);
+}
+
+/* Ambient Radial Glows */
+.nh-radial-glow {
+  background: radial-gradient(circle 500px at 50% 10%, rgba(16, 185, 129, 0.09), transparent 70%);
+}
+
+/* --- 3. Typography Accents --- */
+.nh-gradient-text {
+  background: linear-gradient(135deg, #34d399 0%, #2dd4bf 50%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nh-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #6ee7b7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* --- 4. Buttons & Micro-Interactions --- */
+.nh-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--nh-emerald-400);
+  color: #04120c !important;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.3);
+}
+
+.nh-btn-primary:hover {
+  background-color: #6ee7b7;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -5px rgba(16, 185, 129, 0.4);
+}
+
+.nh-btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.15);
+  color: #a7f3d0 !important;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nh-btn-whatsapp:hover {
+  background: rgba(16, 185, 129, 0.25);
+  border-color: rgba(16, 185, 129, 0.6);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.nh-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(15, 23, 42, 0.8);
+  color: #ffffff !important;
+  border: 1px solid var(--nh-border-subtle);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nh-btn-secondary:hover {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(16, 185, 129, 0.3);
+  transform: translateY(-2px);
+}
+
+/* --- 5. Elementor Container & Section Resets --- */
+.elementor-section.nh-section,
+.e-con.nh-section {
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+}
+
+@media (max-width: 768px) {
+  .elementor-section.nh-section,
+  .e-con.nh-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+/* Clean Elementor Form Fields */
+.nh-form-field {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background-color: rgba(2, 6, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.nh-form-field:focus {
+  border-color: var(--nh-emerald-400);
+}
+
+/* Accordion FAQ Styling */
+.nh-faq-item {
+  border: 1px solid var(--nh-border-subtle);
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.6);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+
+.nh-faq-item.active {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.nh-faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nh-faq-content {
+  display: none;
+  padding: 0 24px 24px 24px;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nh-faq-item.active .nh-faq-content {
+  display: block;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

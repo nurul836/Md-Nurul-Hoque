@@ -1,0 +1,151 @@
+{
+  "version": "0.4",
+  "title": "Nurul Hoque - WordPress Web Designer & Developer Portfolio",
+  "type": "page",
+  "content": [
+    {
+      "id": "nh_hero_section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "custom_css": "selector { padding-top: 100px; padding-bottom: 80px; background-color: #080c14; }"
+      },
+      "elements": [
+        {
+          "id": "nh_hero_col_left",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60
+          },
+          "elements": [
+            {
+              "id": "nh_hero_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"nh-badge\"><span style=\"width:8px;height:8px;border-radius:50%;background:#34d399;display:inline-block;\"></span> WORDPRESS WEB DESIGNER · AVAILABLE WORLDWIDE</div>"
+              }
+            },
+            {
+              "id": "nh_hero_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "I Build <span style=\"color:#34d399\">Modern WordPress Websites</span> That Help Businesses Grow.",
+                "header_size": "h1"
+              }
+            },
+            {
+              "id": "nh_hero_desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#cbd5e1;font-size:18px;line-height:1.7;\">I design fast, responsive and conversion-focused WordPress websites for businesses, entrepreneurs, agencies and online brands with Elementor and WooCommerce.</p>"
+              }
+            },
+            {
+              "id": "nh_hero_buttons",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap;margin-top:20px;\"><a href=\"#projects\" class=\"nh-btn-primary\">View My Work</a><a href=\"https://wa.me/8801970277595?text=Hello%20Nurul,%20I%20am%20interested%20in%20a%20WordPress%20project\" target=\"_blank\" class=\"nh-btn-whatsapp\">WhatsApp: 01970277595</a><a href=\"#contact\" class=\"nh-btn-secondary\">Let's Work Together</a></div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nh_hero_col_right",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40
+          },
+          "elements": [
+            {
+              "id": "nh_hero_image_card",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"nh-glass-card\" style=\"padding:16px;text-align:center;\"><img src=\"/assets/images/nurul_hoque_official_portrait_1791264591190.jpg\" alt=\"Nurul Hoque\" style=\"width:100%;border-radius:12px;aspect-ratio:3/4;object-fit:cover;object-position:top;\" /><div style=\"margin-top:14px;text-align:left;\"><strong style=\"color:#ffffff;font-size:18px;\">Nurul Hoque</strong><div style=\"color:#34d399;font-size:13px;\">WordPress Web Designer & Developer · 2+ Years Exp</div><div style=\"color:#94a3b8;font-size:12px;margin-top:4px;\">WhatsApp: 01970277595 | mdnurulhoque1904@gmail.com</div></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nh_about_section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "custom_css": "selector { padding-top: 80px; padding-bottom: 80px; background-color: #090e18; border-top: 1px solid rgba(255,255,255,0.06); }"
+      },
+      "elements": [
+        {
+          "id": "nh_about_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "nh_about_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About Me & Core WordPress Specialization",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "nh_about_stats",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:30px;\"><div class=\"nh-glass-card\" style=\"padding:24px;\"><div style=\"font-size:32px;font-weight:800;color:#ffffff;\">2+</div><div style=\"color:#34d399;font-weight:600;font-size:14px;\">Years Experience</div><div style=\"color:#94a3b8;font-size:12px;\">Continuous WordPress Specialization</div></div><div class=\"nh-glass-card\" style=\"padding:24px;\"><div style=\"font-size:32px;font-weight:800;color:#ffffff;\">20+</div><div style=\"color:#34d399;font-weight:600;font-size:14px;\">Projects Built</div><div style=\"color:#94a3b8;font-size:12px;\">E-commerce, Business & LMS</div></div><div class=\"nh-glass-card\" style=\"padding:24px;\"><div style=\"font-size:32px;font-weight:800;color:#ffffff;\">100%</div><div style=\"color:#34d399;font-weight:600;font-size:14px;\">Responsive Design</div><div style=\"color:#94a3b8;font-size:12px;\">Flawless Mobile & Desktop QA</div></div><div class=\"nh-glass-card\" style=\"padding:24px;\"><div style=\"font-size:32px;font-weight:800;color:#ffffff;\">Client-Focused</div><div style=\"color:#34d399;font-weight:600;font-size:14px;\">Strategic Approach</div><div style=\"color:#94a3b8;font-size:12px;\">Prioritizing Business Conversions</div></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nh_contact_section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "custom_css": "selector { padding-top: 80px; padding-bottom: 90px; background-color: #080c14; border-top: 1px solid rgba(255,255,255,0.06); }"
+      },
+      "elements": [
+        {
+          "id": "nh_contact_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "nh_contact_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Have a project in mind? Let's build something great together.",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "nh_contact_channels",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px;\"><a href=\"https://wa.me/8801970277595?text=Hello%20Nurul,%20I%20am%20interested%20in%20a%20WordPress%20project\" target=\"_blank\" class=\"nh-glass-card\" style=\"padding:24px;text-decoration:none;display:block;\"><div style=\"color:#34d399;font-weight:700;font-size:12px;text-transform:uppercase;\">WhatsApp (Fastest Response)</div><div style=\"color:#ffffff;font-size:20px;font-weight:800;margin-top:6px;\">01970277595</div><div style=\"color:#94a3b8;font-size:13px;margin-top:4px;\">International: +880 1970 277595</div></a><a href=\"https://www.linkedin.com/in/md-nurul-hoque-191a4637a/\" target=\"_blank\" class=\"nh-glass-card\" style=\"padding:24px;text-decoration:none;display:block;\"><div style=\"color:#60a5fa;font-weight:700;font-size:12px;text-transform:uppercase;\">LinkedIn Profile</div><div style=\"color:#ffffff;font-size:18px;font-weight:700;margin-top:6px;\">md-nurul-hoque-191a4637a</div><div style=\"color:#94a3b8;font-size:13px;margin-top:4px;\">Connect Professionally</div></a><a href=\"https://www.facebook.com/nurlhoque22\" target=\"_blank\" class=\"nh-glass-card\" style=\"padding:24px;text-decoration:none;display:block;\"><div style=\"color:#38bdf8;font-weight:700;font-size:12px;text-transform:uppercase;\">Facebook Profile</div><div style=\"color:#ffffff;font-size:18px;font-weight:700;margin-top:6px;\">nurlhoque22</div><div style=\"color:#94a3b8;font-size:13px;margin-top:4px;\">Direct Social Contact</div></a><a href=\"mailto:mdnurulhoque1904@gmail.com\" class=\"nh-glass-card\" style=\"padding:24px;text-decoration:none;display:block;\"><div style=\"color:#34d399;font-weight:700;font-size:12px;text-transform:uppercase;\">Email Inquiries</div><div style=\"color:#ffffff;font-size:16px;font-weight:700;margin-top:6px;\">mdnurulhoque1904@gmail.com</div><div style=\"color:#94a3b8;font-size:13px;margin-top:4px;\">Response under 12 hours</div></a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
